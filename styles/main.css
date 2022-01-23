@@ -1,0 +1,504 @@
+
+/*Main page styles */
+body
+{
+	background: linear-gradient(45deg, #87CEFA, white);
+}
+
+#HeaderOtzyvy
+{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #4b0082;
+	font-size: 48px;
+	text-align: center;
+	padding: 0;
+}
+footer
+{
+	font-family: Courier, monospace;
+	color: #4b0082;
+	text-align: center;
+}
+.MainBlockOtzyvy
+{
+	width: 80%;
+	background: #F5FFFA;
+	margin: 0px auto;
+	border-radius: 5px;
+	overflow: auto;
+	height: 550px;
+	scrollbar-base-color:  #4169E1;
+}
+
+/*Scrollbar Styles for Chrome/Edge/Opera */
+
+.MainBlockOtzyvy::-webkit-scrollbar, .MainBlockOtzyvy::-webkit-scrollbar-track, .MainBlockOtzyvy::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+}
+.MainBlockOtzyvy::-webkit-scrollbar
+{
+	width: 30px;
+}
+.MainBlockOtzyvy::-webkit-scrollbar-track 
+{
+    background-color: #87CEFA;
+}
+.MainBlockOtzyvy::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #00BFFF;
+	opacity: 0.5;
+}
+
+
+
+.BlockFormSentOtzyv
+{
+	width: 80%;
+	min-height: 500px;
+	background: #F5FFFA;
+	margin: 0px auto;
+	border-radius: 5px;
+	color: #4b0082; 
+	font-family: Courier, monospace;
+}
+
+#FormHeader
+{
+	font-size: 24px;
+	padding: 0;
+	margin: 10px;
+	text-align: center;
+	font-family: Courier, monospace;
+}
+
+#TextName, #TextEmail, #TextOtzyv, #TextImg
+{
+	font-size: 24px;
+}
+#TextOtzyv
+{
+	margin-left: 4%;
+}
+#TextEmail
+{	
+	margin-left: 7.5%;
+}
+#TextName
+{
+	margin-left: 11%;
+}
+input[name="username"], input[name="useremail"], textarea[name="usertext"]
+{
+	margin-left: 2%;
+	font-size: 22px;
+	font-family: Courier, monospace;
+	border-radius: 5px;
+	border: 1px solid #4b0082;
+}
+input[name="username"], input[name="useremail"]
+{
+	width: 360px;
+}
+input[name="username"]
+{
+	margin-left: 2%;
+}
+
+textarea[name="usertext"]
+{
+	width: 700px;
+	height: 160px;
+	vertical-align: top;
+	overflow: auto;
+}
+input[name="username"]:focus, input[name="useremail"]:focus, textarea[name="usertext"]:focus
+{
+	background: #AFEEEE;
+}
+
+#TextImg
+{
+	position: absolute;
+	margin-left: 61%;
+	margin-top: -12.4%;
+	font-size: 20px;
+}
+
+input[name="Admin"]
+{
+	width: 120px;
+	height: 50px;
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 81.5%;
+	font-family: Courier, monospace;
+	font-size: 22px;
+	color: #4b0082;
+	border-radius: 5px;
+	background: #ffffe0;
+}
+button[name="SendOtzPrevius"], button[name="SendOtz"]
+{
+	position: absolute;
+	height: 50px;
+	width: 250px;
+	font-family: Courier, monospace;
+	color: #4b0082;
+	border-radius: 5px;
+	font-size: 20px;
+}
+button[name="SendOtzPrevius"]
+{
+	margin-left: 350px;
+	background: #87CEFA;
+}
+button[name="SendOtz"]
+{
+	margin-left: 650px;
+	background: #90ee90;
+}
+button[name="SendOtzPrevius"]:hover, input[name="Admin"]:hover, button[name="SendOtz"]:hover
+{
+	cursor: pointer;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*Styles for PictureInput */
+.PictureWrapper
+{
+	position: absolute;
+	margin-left: 61%;
+	margin-top: -10%;
+	height: 200px;
+	width: 250px;
+}
+#userpicture
+{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.PictureFileText
+{
+	line-height: 1;
+	margin-top: 1px;
+}
+
+#userpicturelabel
+{
+	width: 120px;
+	text-align: center;
+	height: 60px;
+	background: #6495ED;
+	color: #fff;
+	font-size: 1.125rem;
+	font-weight: 500;
+	font-family: Courier, monospace;
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		 -ms-flex-align: center;
+			  align-items: center;
+	-webkit-box-pack: start;
+		  -ms-flex-pack: start;
+			  justify-content: flex-start;
+	border-radius: 3px;
+	cursor: pointer;
+	margin: 0 auto;	
+}
+
+#picturename, #pictureerrors
+{
+	font-size: 18px;
+	margin: 15px;
+	font-weight: 600;
+	text-align: center;
+}
+#picturename
+{
+	color: #FFA500;
+	margin-left: -5%;
+	text-align: center;
+}
+#pictureerrors
+{
+	color: red;
+	margin-top: 30px;
+}
+
+/*Styles for Main Error Message */
+#ErrorMessage
+{
+	color: red;
+	font-family: Courier, monospace;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+
+/*Styles for previous result */
+#PreviousView
+{
+	background: #FFFACD;
+	margin: 20px;
+	height: 200px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	color: #d2691e;
+	display: none;
+}
+#PreviousName, #PreviousEmail 
+{
+	font-family: Courier, monospace;
+	font-size: 20px;
+	margin: 5px;
+}
+#PreviousName
+{
+	position: absolute;
+	margin-left: 10px;
+}
+#PreviousEmail
+{
+	text-align: center;
+}
+
+#PreviousDate
+{
+	text-align: right;
+	position: none;
+	font-family: Courier, monospace;
+	font-size: 20px;
+	margin: 5px;
+	margin-top: -25px;
+}
+#PreviousText
+{
+	position: absolute;
+	width: 860px;
+	height: 150px;
+	background: white;
+	margin-left: 300px;
+	margin-top: 0px;
+	overflow: auto;
+	padding: 5px;
+	border-radius: 8px;
+	color: #00008b;
+}
+#PreviousImg
+{
+	position: absolute;
+	height: 155px;
+	width: 245px;
+	margin-left: 30px;
+	margin-top: 3px;
+	
+}
+
+
+
+/*AdminAccess Page Styles */
+#AdminAccessFormBlock
+{
+		border: 2px double #4b0082;
+		border-radius: 5px;
+		position: relative;
+		width: 500px;
+		height: 300px;
+		margin: 200px auto;
+		font-family: Courier, monospace;
+		font-size: 24px;
+		color: #4b0082;
+}
+#HeaderConnection
+{
+	text-align: center;
+}
+#AdminLogin
+{
+	margin-left: 40px;
+	margin-top: 40px;
+}
+#AdminPassword
+{
+	margin-left: 30px;
+}
+#AdminEnter
+{
+	margin-left: 200px;
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	font-size: 24px;
+	font-family: Courier, monospace;
+	color: #4b0082;
+	background: white;
+}
+#AdminEnter:hover
+{
+	cursor: pointer;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+input[name="login"], input[name="pass"]
+{
+	font-size: 22px;
+	margin-left: 20px;
+	font-family: Courier, monospace;
+}
+input[name="login"]
+{
+	margin-left: 25px;
+}
+
+
+/*Admin Page */
+#BackToMainPageButton
+{
+	width: 160px;
+	height: 50px;
+	position: absolute;
+	font-size: 24px;
+	border-radius: 10px;
+	font-family: Couririer, monospace;
+	background: white;
+	margin-left: 79%;
+	margin-top: -10px;
+}
+#BackToMainPageButton:hover
+{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.AdminBlock
+{
+	width: 80%;
+	min-height: 800px;
+	background: #fffaf0;
+	margin: 50px auto;
+	border-radius: 20px;
+	overflow: auto;
+}
+#AdminPageHeader
+{
+	font-size: 48px;
+	font-family: Couririer, monospace;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#MyTable
+{
+	margin: 10px;
+	width: 96%;
+	text-align: center;
+	margin-left: 5px;
+	background: orange;
+	border-collapse: collapse;
+	font-family: Couririer, monospace;
+}
+.TCell
+{
+	height: 100px;
+}
+.TCell
+{
+	padding: 10px;
+	text-align: justify;
+	
+}
+.TCell:first-of-type
+{
+	width: 100px;
+}
+#TComment
+{
+	min-width: 440px;
+}
+#FristTRow
+{
+	background: #fffaf0;
+}
+.TRow
+{
+	border-bottom: 10px solid #fffaf0;
+	border-radius: 20px;
+	background: #ffdead;
+	width: 100%;
+}
+.THeadCell
+{
+	height: 0px;
+}
+.FilterButtons
+{
+	border: 1px solid white;
+	background: #00BFFF;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	font-family: Courier, monospace;
+	font-size: 14px;
+}
+.FilterButtons:hover
+{
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.FilterDisabledButtons
+{
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+
+
+#ValidateButton, #DeclineButton, #ChangeButton
+{
+	width: 120px;
+	height: 30px;
+	border-radius: 5px;
+	font-family: Courier, monospace;
+	font-size: 14px;
+	border: 1px solid white;
+}
+#ValidateButton
+{
+	background: #32CD32;
+}
+#ValidateButton:hover, #DeclineButton:hover, #ChangeButton:hover
+{
+	cursor: pointer;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#DeclineButton
+{
+	background: #E9967A;
+}
+#DeclineButton, #ValidateButton
+{
+	margin-top: 5px;
+}
+#ChangeButton
+{
+	background: aqua;
+}
+#admincomment
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: Courier, monospace;
+	overflow: auto;
+	background: #fafad2;
+}
+#ValidatedByAdmin
+{
+	text-align: center;
+	font-size: 20px;
+	color:  #228b22;
+}
